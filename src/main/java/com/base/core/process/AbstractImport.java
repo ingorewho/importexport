@@ -7,9 +7,10 @@ import com.base.core.process.helper.ImportHelper;
  * @Description 导入抽象类
  * @Date 2019-04-28
  **/
-public abstract class AbstractImport implements Import{
+public abstract class AbstractImport<T> implements Import<T>{
 
-    public void importData(ImportHelper importHelper) {
+    @Override
+    public void importData(ImportHelper<T> importHelper) {
 
     }
 }
