@@ -1,6 +1,6 @@
 package com.base.core.process;
 
-import com.base.core.process.helper.ImportHelper;
+import com.base.core.helper.ImportHelper;
 
 /**
  * @Author renzhiqiang

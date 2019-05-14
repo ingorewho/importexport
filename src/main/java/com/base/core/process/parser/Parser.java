@@ -1,10 +1,16 @@
 package com.base.core.process.parser;
 
-import com.base.core.process.parser.reader.Reader;
+import java.io.InputStream;
+import java.util.List;
 
 public interface Parser<T> {
-    T parse(Reader reader);
+    List<T> parse(InputStream stream);
 
+    InputStream parse(List<T> data);
 
-
+    /**
+     * bean class type
+     * @return
+     */
+    Class<?> clazzType();
 }
