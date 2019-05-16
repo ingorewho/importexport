@@ -1,10 +1,11 @@
 package com.base.core.process.parser;
 
+import com.base.core.metadata.Row;
+import com.base.core.metadata.Title;
 import com.base.core.process.parser.mapper.Mapper;
 import com.base.core.process.parser.reader.Reader;
 import com.base.core.process.parser.writer.Writer;
 
-import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -18,17 +19,12 @@ public class InternalParser extends AbstractParser{
     }
 
     @Override
-    public List parse(InputStream stream) {
+    protected Title parseTitle() {
         return null;
     }
 
     @Override
-    public InputStream parse(List data) {
-        return null;
-    }
-
-    @Override
-    public Class<?> clazzType() {
+    protected List<Row> parseAllRow() {
         return null;
     }
 }

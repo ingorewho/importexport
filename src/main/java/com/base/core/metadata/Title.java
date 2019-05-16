@@ -6,4 +6,5 @@ package com.base.core.metadata;
  * @Date 2019-05-14
  **/
 public class Title {
+
 }

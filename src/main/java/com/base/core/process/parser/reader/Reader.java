@@ -2,12 +2,14 @@ package com.base.core.process.parser.reader;
 
 
 import com.base.core.metadata.Row;
+import com.base.core.metadata.Title;
 
-public interface Reader<T> {
+import java.util.List;
 
-    T readRow(Row row);
+public interface Reader {
+    Title readTitle();
 
+    List<Row> readMutiRow(int rowNum);
 
-
-
+    List<Row> readAllRow();
 }
